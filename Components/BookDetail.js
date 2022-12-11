@@ -3,7 +3,7 @@ function bookDetails(bookInfo) {
     let html = `
     <div id="bookDetail${bookInfo.id}" 
           class="book__details absolute inset-x-1 divide-y border-x-4 border-black  bg-blue-200 p-2 w-48 top-10 mx-8">
-        <img src="${bookInfo.coverImage}" alt="Omslaget för denna bok saknas">
+        <img src="${bookInfo.coverImage}" alt="Omslag saknas">
             
         <ul class="list">
               <li>Title: ${bookInfo.title}</li>
