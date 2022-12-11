@@ -13,30 +13,6 @@ const BookListItem = (book) => {
 
 
   
-async function showBook(id) {
-  const li = document.getElementById('book' + id);
 
-  let bookInfo = await getOne(id);
-  bookInfo && li.insertAdjacentHTML("beforeend", bookDetails(bookInfo));
-}
- 
- 
- 
- function hideBook(bookListItem) {
-  console.log(bookListItem);
-  const removeDetails = bookListItem.children[0];
-  if (removeDetails) bookListItem.removeChild(removeDetails);
-     
-  
-} 
-
-function getBook(book){
-
-  const elements = document.getElementById('bookDetails');
-
-  elements && elements.remove();
-  let html = BookDetail(book);
-  root.insertAdjacentHTML('afterbegin', html);
-}
 
 
