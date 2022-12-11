@@ -30,6 +30,13 @@ async function showBook(id) {
   
 } 
 
+function getBook(book){
 
+  const elements = document.getElementById('bookDetails');
+
+  elements && elements.remove();
+  let html = BookDetail(book);
+  root.insertAdjacentHTML('afterbegin', html);
+}
 
 
