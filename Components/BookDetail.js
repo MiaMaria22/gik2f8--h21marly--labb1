@@ -1,18 +1,18 @@
-/*function bookDetails(book) {
-     
+function bookDetails(bookInfo) {
+    console.log(bookInfo);
     let html = `
-    <div id="bookDetail${book.id}" 
+    <div id="bookDetail${bookInfo.id}" 
           class="book__details absolute inset-x-1 divide-y border-x-4 border-black  bg-red-300 p-2 w-48 top-10 mx-8">
-        <img src="${book.coverImage}" alt="Omslaget för denna bok saknas">
+        <img src="${bookInfo.coverImage}" alt="Omslaget för denna bok saknas">
             
         <ul class="list">
-              <li>Title: ${book.title}</li>
-              <li>Author: ${book.author}</li>
-              <li>Pages: ${book.pages}</li>
-              <li>Release date: ${book.releaseDate}</li>
+              <li>Title: ${bookInfo.title}</li>
+              <li>Author: ${bookInfo.author}</li>
+              <li>Pages: ${bookInfo.pages}</li>
+              <li>Release date: ${bookInfo.releaseDate}</li>
             </ul>
         </div>
       `;
 
     return html; 
-}*/
+}
